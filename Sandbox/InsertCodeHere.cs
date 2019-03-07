@@ -144,9 +144,15 @@ namespace Sandbox
             {
                 Console.WriteLine("Ja tallet findes i listen");
             }
-            
 
-
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Dette er lavet i original");
+            Console.WriteLine("Test");
 
             //Console.WriteLine("Hello world!");
 
