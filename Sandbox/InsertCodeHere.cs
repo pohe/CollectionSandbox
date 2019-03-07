@@ -108,8 +108,8 @@ namespace Sandbox
                 Console.WriteLine($"På index {i} ligger {myList[i]}");
             }
 
-            myList.Sort();
-            myList.Reverse();
+            //myList.Sort();
+            //myList.Reverse();
 
             Console.WriteLine("Udskrivning af Liste vha. foreach efter sortering");
             foreach (int value in myList)
@@ -122,6 +122,30 @@ namespace Sandbox
             {
                 Console.WriteLine($"På index {i} ligger {myList[i]}");
             }
+
+
+            //Find et tal i listen
+            int searchTal = 95;
+            int l = 0;
+            bool found = false;
+            while (!found && l< myList.Count)
+            {
+                //searchTal == myList
+                if (searchTal  == myList[l])
+                {
+                    found = true;
+                    //break;
+                }
+                l++;
+             
+            }
+
+            if (found)
+            {
+                Console.WriteLine("Ja tallet findes i listen");
+            }
+            
+
 
 
             //Console.WriteLine("Hello world!");
