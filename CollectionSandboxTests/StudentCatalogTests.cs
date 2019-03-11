@@ -20,6 +20,9 @@ namespace Sandbox.Tests
             Student s2 = new Student("Poul");
             Student s3 = new Student("Vibeke");
             _catalog = new StudentCatalog();
+            _catalog.AddStudent(s1);
+            _catalog.AddStudent(s2);
+            _catalog.AddStudent(s3);
         }
 
 
@@ -27,15 +30,15 @@ namespace Sandbox.Tests
         public void AddStudentTest()
         {
             //Arrange
-            //setUp();
+            setUp();
 
             ////Act
-            //Student s4 = new Student("Jamshid");
-            //int beforeAdd = _catalog.Count;
-            //_catalog.AddStudent(s4);
-            //int afterAdd = _catalog.Count;
+            Student s4 = new Student("Jamshid");
+            int beforeAdd = _catalog.Count;
+            _catalog.AddStudent(s4);
+            int afterAdd = _catalog.Count;
             ////Assert
-            //Assert.AreEqual(afterAdd-1, beforeAdd);
+            Assert.AreEqual(afterAdd-1, beforeAdd);
         }
 
         [TestMethod()]
