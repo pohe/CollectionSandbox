@@ -25,6 +25,11 @@ namespace Sandbox
 
             Student [] students = new Student[]{ new Student("Peter"), new Student("Vibeke")};
 
+            foreach (Student s in students)
+            {
+                Console.WriteLine(s);
+            }
+
             Console.WriteLine("For loop");
             for (int i = 0; i < tal.Length; i++)
             {
@@ -38,6 +43,8 @@ namespace Sandbox
                 Console.WriteLine(tal[j]);
                 j++;
             }
+
+            
 
             Console.WriteLine("Foreach");
 
@@ -153,6 +160,11 @@ namespace Sandbox
             Console.WriteLine("Dette er lavet i original");
             Console.WriteLine("Dette er lavet i original");
             Console.WriteLine("Test");
+
+
+            StudentCatalog catalog = new StudentCatalog();
+            Student s1 = new Student("Mathias");
+            catalog.AddStudent(s1);
 
             //Console.WriteLine("Hello world!");
 
